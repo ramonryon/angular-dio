@@ -14,13 +14,15 @@
     </thead>
     <tbody>
         <tr *ngFor="let aula of aulas">
-            <td>{{aula.imageUrl}}</td>
+            <td><img [src]="aula.imageUrl" alt="" width="40" height="40"></td>
             <td>{{aula.name}}</td>
             <td>{{aula.code}}</td>
             <td>{{aula.price}}</td>
             <td>{{aula.rating}}</td>
             <td>{{aula.releaseDate}}</td>
-            <td></td>
+            <td>
+                <app-star [rating]='aula.rating'></app-star>
+            </td>
         </tr>
     </tbody>
 </table>
