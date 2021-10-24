@@ -1,0 +1,26 @@
+<h2>Curso de angular</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Realease Date</th>
+            <th>Option</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr *ngFor="let aula of aulas">
+            <td>{{aula.imageUrl}}</td>
+            <td>{{aula.name}}</td>
+            <td>{{aula.code}}</td>
+            <td>{{aula.price}}</td>
+            <td>{{aula.rating}}</td>
+            <td>{{aula.releaseDate}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
